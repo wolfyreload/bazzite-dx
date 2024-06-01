@@ -9,6 +9,7 @@ This is my own custom Universal Blue image, that is based off of the bazzite-nvi
 - **Virtual Machine Manager** - Needed for running Windows for some software
 - **gparted** - I prefer this one to the KDE tools
 - **gnome-disk-utility** - Needed for auto mounting disks from a GUI
+- **OpenSnitch** - custom outbound firewall
 
 # Rebasing to this image
 

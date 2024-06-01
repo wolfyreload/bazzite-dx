@@ -33,6 +33,14 @@ rpm-ostree install \
         gparted \
         gnome-disk-utility
 
+# Install opensnitch
+wget -O /tmp/opensnitch.rpm https://github.com/evilsocket/opensnitch/releases/download/v1.6.5/opensnitch-1.6.5-1.x86_64.rpm
+wget -O /tmp/opensnitch-ui.rpm https://github.com/evilsocket/opensnitch/releases/download/v1.6.5.1/opensnitch-ui-1.6.5.1-1.noarch.rpm
+rpm-ostree install \
+        /tmp/opensnitch.rpm \
+        /tmp/opensnitch-ui.rpm
+sudo systemctl enable opensnitch.service
+        
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
