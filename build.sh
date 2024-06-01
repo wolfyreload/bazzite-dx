@@ -28,6 +28,11 @@ rpm-ostree install \
         edk2-ovmf \
         qemu
 
+# Install useful gnome utilities
+rpm-ostree install \ 
+        gparted \
+        gnome-disk-utility
+
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
