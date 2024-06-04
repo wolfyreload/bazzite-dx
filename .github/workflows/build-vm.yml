@@ -2,7 +2,7 @@
 name: build-ublue-custom
 on:
   schedule:
-    - cron: '40 3 * * 1'  # 03:40am UTC Monday
+    - cron: '40 4 * * 1'  # 04:40am UTC Monday
   push:
     branches:
       - main
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  MY_IMAGE_NAME: "bazzite-wolfy"  # the name of the image produced by this build, matches repo names
+  MY_IMAGE_NAME: "bazzite-wolfy-vm"  # the name of the image produced by this build, matches repo names
   MY_IMAGE_DESC: "My Customized Universal Blue Image"
   IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}"  # do not edit
 
@@ -98,7 +98,7 @@ jobs:
         uses: redhat-actions/buildah-build@v2
         with:
           containerfiles: |
-            ./Containerfile
+            ./Containerfile-vm
           # Postfix image name with -custom to make it a little more descriptive
           # Syntax: https://docs.github.com/en/actions/learn-github-actions/expressions#format
           image: ${{ env.MY_IMAGE_NAME }}
