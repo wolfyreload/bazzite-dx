@@ -41,9 +41,6 @@ rpm-ostree install \
         /tmp/opensnitch.rpm \
         /tmp/opensnitch-ui.rpm
 sudo systemctl enable opensnitch.service
-
-# Install bootc
-rpm-ostree install bootc
         
 #### Example for enabling a System Unit File
 
