@@ -1,5 +1,5 @@
 ---
-name: build-ublue-custom
+name: build-bazzite-wolfy-vm
 on:
   schedule:
     - cron: '40 4 * * 1'  # 04:40am UTC Monday
