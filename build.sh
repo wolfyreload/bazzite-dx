@@ -22,12 +22,6 @@ rpm-ostree install code
 wget -O /tmp/azuredatastudio.rpm https://go.microsoft.com/fwlink/?linkid=2261574
 rpm-ostree install /tmp/azuredatastudio.rpm
 
-# Install virtual machine software
-rpm-ostree install \
-        virt-manager \
-        edk2-ovmf \
-        qemu
-
 # Install useful gnome utilities
 rpm-ostree install \
         gparted \
