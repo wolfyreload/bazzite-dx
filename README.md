@@ -11,6 +11,7 @@ This is my own custom Universal Blue image, that is based off of the bazzite-nvi
 - **gnome-disk-utility** - Needed for auto mounting disks from a GUI
 - **OpenSnitch** - custom outbound firewall
 - **gnome-system-monitor** - The KDE system monitor is not great at all
+- **docker** - I would like to use either docker or podman, it's nice to have the choice
 
 # VM Image
 

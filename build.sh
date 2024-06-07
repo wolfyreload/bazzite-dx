@@ -33,6 +33,13 @@ rpm-ostree install \
         /tmp/opensnitch.rpm \
         /tmp/opensnitch-ui.rpm
 sudo systemctl enable opensnitch.service
+
+# Install docker
+rpm-ostree install docker-ce \
+        docker-ce-cli \
+        docker-buildx-plugin \
+        docker-compose-plugin \
+        containerd.io
         
 #### Example for enabling a System Unit File
 
