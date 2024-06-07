@@ -26,7 +26,8 @@ rpm-ostree install /tmp/azuredatastudio.rpm
 rpm-ostree install \
         gparted \
         gnome-disk-utility \
-        gnome-system-monitor
+        gnome-system-monitor\
+        gedit
 
 # Install opensnitch
 wget -O /tmp/opensnitch.rpm https://github.com/evilsocket/opensnitch/releases/download/v1.6.5/opensnitch-1.6.5-1.x86_64.rpm

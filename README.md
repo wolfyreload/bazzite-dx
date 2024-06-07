@@ -7,6 +7,7 @@ This is my own custom Universal Blue image, that is based off of the bazzite-nvi
 - **Visual Studio Code** - The rpm-ostree version has better integration than the flatpak version
 - **Azure Data Studio** - I use this for connecting to MS SQL, Azure SQL, PostgreSQL and MySQL
 - **gparted** - I prefer this one to the KDE tools
+- **gedit** - I want a simple text editor not something trying to be an IDE like Kate
 - **gnome-disk-utility** - Needed for auto mounting disks from a GUI
 - **OpenSnitch** - custom outbound firewall
 - **gnome-system-monitor** - The KDE system monitor is not great at all
