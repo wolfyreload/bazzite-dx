@@ -1,8 +1,10 @@
 ---
 name: build-bazzite-wolfy-vm
 on:
-  schedule:
-    - cron: '40 4 * * 1'  # 04:40am UTC Monday
+  workflow_run:
+    workflows: ["build-bazzite-wolfy"]
+    types:
+      - completed
   workflow_dispatch:
 
 env:
