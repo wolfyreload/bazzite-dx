@@ -4,17 +4,17 @@ This is my own custom Universal Blue image, that is based off of the bazzite-nvi
 
 # Custom software
 
-- **Visual Studio Code** - The rpm-ostree version has better integration than the flatpak version
-- **Azure Data Studio** - I use this for connecting to MS SQL, Azure SQL, PostgreSQL and MySQL
-- **gparted** - I prefer this one to the KDE tools
-- **gedit** - I want a simple text editor not something trying to be an IDE like Kate
-- **gnome-disk-utility** - Needed for auto mounting disks from a GUI
-- **gnome-system-monitor** - The KDE system monitor is not great at all
-- **docker** - I would like to use either docker or podman, it's nice to have the choice
+- **Visual Studio Code** - While both flatpak and rpm-ostree options are available, the rpm-ostree version offers better integration with the system.
+- **Azure Data Studio** - This is my go-to tool for connecting to various databases, including MS SQL, Azure SQL, PostgreSQL, and MySQL.
+- **gparted** - This lightweight partition editor is my preference over the KDE alternative.
+- **gnome-disk-utility** - A handy GUI tool for managing automounting of disks.
+- **gedit** - Sometimes I need a simple text editor not something trying to be an IDE like Kate
+- **gnome-system-monitor** - This tool provides a clear overview of system resources, unlike the less user-friendly KDE system monitor.
+- **docker** - Both Docker and Podman are great options for containerization, I've added docker to add flexibility in choice.
 
 # VM Image
 
-- **Virtual Machine Manager** - Needed for running Windows for some software
+- **Virtual Machine Manager** - Needed for running Windows in a VM or for testing Bazzite ISOs
 
 # Rebasing to this image
 
@@ -24,7 +24,7 @@ Feel free to use this image if you wish, but I will not be providing support for
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/wolfyreload/bazzite-wolfy:stable
 ```
 
-or the larger VM image
+or the larger image which includes Virtual Machine Manager and it's dependencies
 
 ```bash
 rpm-ostree rebase ostree-unverified-registry:ghcr.io/wolfyreload/bazzite-wolfy-vm:stable
