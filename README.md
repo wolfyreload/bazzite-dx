@@ -21,11 +21,11 @@ This is my own custom Universal Blue image, that is based off of the bazzite-nvi
 Feel free to use this image if you wish, but I will not be providing support for this image
 
 ```bash
-rpm-ostree rebase rpm-ostree rebase ostree-unverified-registry:ghcr.io/wolfyreload/bazzite-wolfy:stable
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/wolfyreload/bazzite-wolfy:stable
 ```
 
 or the larger VM image
 
 ```bash
-rpm-ostree rebase rpm-ostree rebase ostree-unverified-registry:ghcr.io/wolfyreload/bazzite-wolfy-vm:stable
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/wolfyreload/bazzite-wolfy-vm:stable
 ```
