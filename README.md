@@ -14,7 +14,7 @@ This is my own custom Universal Blue image, that is based off of the bazzite-nvi
 
 # VM Image
 
-- **Virtual Machine Manager** - Needed for running Windows in a VM or for testing Bazzite ISOs
+- **VirtualBox** - Needed for running Windows in a VM or for testing Bazzite ISOs
 
 # Rebasing to this image
 
