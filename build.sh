@@ -19,6 +19,9 @@ rpm-ostree install code
 sed -i 's@enabled=0@enabled=1@g' /etc/yum.repos.d/_copr_sentry-kernel-fsync.repo
 sed -i 's@enabled=0@enabled=1@g' /etc/yum.repos.d/_copr_ublue-os-akmods.repo 
 sed -i 's@enabled=0@enabled=1@g' /etc/yum.repos.d/rpmfusion-nonfree-nvidia-driver.repo
+curl -Lo /tmp/nvidia-install.sh https://us.download.nvidia.com/XFree86/Linux-x86_64/555.52.04/NVIDIA-Linux-x86_64-555.52.04.run && \
+chmod +x /tmp/nvidia-install.sh && \
+RPMFUSION_MIRROR="" /tmp/nvidia-install.sh && \
 rpm-ostree install nvidia-driver nvidia-driver-libs nvidia-libXNVCtrl nvidia-kmod-common nvidia-modprobe nvidia-settings nvidia-xconfig akmod-nvidia nvidia-driver-cuda nvidia-driver-cuda-libs
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_sentry-kernel-fsync.repo
 sed -i 's@enabled=1@enabled=0@g' /etc/yum.repos.d/_copr_ublue-os-akmods.repo 
