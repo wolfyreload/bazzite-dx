@@ -55,8 +55,6 @@ RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
     ostree container commit
 
-# enable but don't start docker service socket
-RUN systemctl enable docker.socket
 RUN /usr/libexec/containerbuild/build-initramfs && \
     ostree container commit
     

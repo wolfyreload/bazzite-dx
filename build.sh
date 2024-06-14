@@ -15,24 +15,6 @@ RELEASE="$(rpm -E %fedora)"
 # Install vscode
 rpm-ostree install code
 
-# Install Azure data studio
-wget -O /tmp/azuredatastudio.rpm https://go.microsoft.com/fwlink/?linkid=2261574
-rpm-ostree install /tmp/azuredatastudio.rpm
-
-# Install useful gnome utilities
-rpm-ostree install \
-        gparted \
-        gnome-disk-utility \
-        gnome-system-monitor\
-        gedit
-
-# Install docker
-rpm-ostree install docker-ce \
-        docker-ce-cli \
-        docker-buildx-plugin \
-        docker-compose-plugin \
-        containerd.io
-        
 # Enable nvidia driver
 sed -i 's@enabled=0@enabled=1@g' /etc/yum.repos.d/_copr_sentry-kernel-fsync.repo
 sed -i 's@enabled=0@enabled=1@g' /etc/yum.repos.d/_copr_ublue-os-akmods.repo 
