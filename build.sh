@@ -33,6 +33,15 @@ rpm-ostree install docker-ce \
         docker-compose-plugin \
         containerd.io
         
+# Remove the autologin to gamescope-session
+rm /usr/etc/sddm.conf.d/steamos.conf
+
+# Undo some bazzite-deck specific services we do not need anymore
+systemctl disable bazzite-autologin.service
+
+# Disable virtual keyboard
+rm /usr/etc/sddm.conf.d/virtualkbd.conf
+
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
