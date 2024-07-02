@@ -1,6 +1,6 @@
 # Bazzite Wolfy Custom
 
-This is my own custom Universal Blue image, that is based off of the bazzite-nvidia image. I have customised the <https://github.com/ublue-os/image-template> template to build this image.
+This is my own custom Universal Blue image, that is based off of the bazzite image. I have customised the <https://github.com/ublue-os/image-template> template to build this image.
 
 # Custom software
 
