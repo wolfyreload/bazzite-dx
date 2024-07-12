@@ -32,6 +32,10 @@ rpm-ostree install docker-ce \
         docker-buildx-plugin \
         docker-compose-plugin \
         containerd.io
+
+# Install earlyoom
+rpm-ostree install earlyoom
+systemctl enable earlyoom
         
 #### Example for enabling a System Unit File
 

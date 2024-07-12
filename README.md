@@ -11,6 +11,7 @@ This is my own custom Universal Blue image, that is based off of the bazzite-nvi
 - **gedit** - Sometimes I need a simple text editor not something trying to be an IDE like Kate
 - **gnome-system-monitor** - This tool provides a clear overview of system resources, unlike the less user-friendly KDE system monitor.
 - **docker** - Both Docker and Podman are great options for containerization, I've added docker to add flexibility in choice.
+- **earlyoom - The Early OOM Daemon** - This works better then systemd-oomd in that it will kill processes before your system is critically out of memory and freezes up.
 
 # VM Image
 
